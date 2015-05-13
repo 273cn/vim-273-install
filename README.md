@@ -1,24 +1,24 @@
-# vim-273-install
-
+# Vim-273-install
 Config files for vim. 
+
 ## how to install
 
 `curl https://raw.githubusercontent.com/273cn/vim-273-install/master/install.sh | sh`
 
-## what is in it?
+## What is in it?
 
 *    Bundle
 *    ctrlp
 *    tagbar
 *    mustache.vim
-*    emmet-vim
+*    emmet
 *    php-manual
 *    Align
 *    Syntax checking
 *    more...
 
 
-## keymaps
+## Keymaps
 
 * `,d` brings up [NERDTree](https://github.com/scrooloose/nerdtree), a sidebar buffer for navigating and manipulating files
 * `,t` brings up [ctrlp.vim](https://github.com/kien/ctrlp.vim), a project file filter for easily opening specific files
