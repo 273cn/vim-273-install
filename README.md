@@ -1,8 +1,8 @@
 # vim-273-install
-----
+
 Config files for vim. 
 ## how to install
-----
+
 `curl https://raw.githubusercontent.com/273cn/vim-273-install/master/install.sh | sh`
 
 ## what is in it?
@@ -35,5 +35,5 @@ Config files for vim.
 * `<S-k>` show the explanation of the keyword under the cursor (or the selected content in visual mode) in php-manual.
 
 ##Reference
-----
+
 [square/maximum-awesome](https://github.com/square/maximum-awesome)
