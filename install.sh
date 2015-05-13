@@ -2,6 +2,12 @@
 
 base_url='https://raw.githubusercontent.com/273cn/vim-273-install/master/'
 
+ctagsstr=`rpm -qa| grep ctags`
+
+if [ -z $ctagsstr ]; then
+    yum install -y ctags
+fi
+
 if [ -f ~/.vimrc ] && [ ! -f ~/.vimrc.bak ]; then
     mv ~/.vimrc ~/.vimrc.bak
 fi
