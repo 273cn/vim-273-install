@@ -1,6 +1,6 @@
 base_url='https://raw.githubusercontent.com/273cn/vim-273-install/master/'
 
-if [ ! -f ~/.vimrc.bak ]; then
+if [ -f ~/.vimrc ] && [ ! -f ~/.vimrc.bak ]; then
     mv ~/.vimrc ~/.vimrc.bak
 fi
 
