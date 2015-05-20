@@ -2,14 +2,16 @@
 
 base_url='https://raw.githubusercontent.com/273cn/vim-273-install/master/'
 
-if [ ! -z "`grep -i centos /etc/issue`" ]; then
-    # centos
-    if [ -z `rpm -qa | grep ctags` ]; then
-        yum install -y ctags
-    fi
-elif [ ! -z "`grep -i 'ubuntu' /etc/issue`" ]; then
-    if [ -z `dpkg -l | awk '{print $2}' | grep 'exuberant-ctags'` ]; then
-        sudo apt-get install -y exuberant-ctags
+if [ -f /etc/issue ]; then
+    if [ ! -z "`grep -i centos /etc/issue`" ]; then
+        # centos
+        if [ -z `rpm -qa | grep ctags` ]; then
+            yum install -y ctags
+        fi
+    elif [ ! -z "`grep -i 'ubuntu' /etc/issue`" ]; then
+        if [ -z `dpkg -l | awk '{print $2}' | grep 'exuberant-ctags'` ]; then
+            sudo apt-get install -y exuberant-ctags
+        fi
     fi
 fi
 
