@@ -3,7 +3,7 @@ Config files for vim.
 
 ## how to install
 
-`curl https://raw.githubusercontent.com/273cn/vim-273-install/master/install.sh | sh`
+`curl https://raw.githubusercontent.com/273cn/vim-273-install/master/install.sh | bash`
 
 ## What is in it?
 
